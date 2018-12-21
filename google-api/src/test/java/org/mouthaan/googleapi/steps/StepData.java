@@ -1,4 +1,4 @@
-package steps;
+package org.mouthaan.googleapi.steps;
 
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;

@@ -1,4 +1,4 @@
-package steps;
+package org.mouthaan.googleapi.steps;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
@@ -8,11 +8,11 @@ import java.util.Map;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 
-public class GoogleBookSearchSecondSteps {
+public class BookByISBNSecondSteps {
 
     private final StepData stepData;
 
-    public GoogleBookSearchSecondSteps(StepData stepData) {
+    public BookByISBNSecondSteps(StepData stepData) {
         this.stepData = stepData;
     }
 

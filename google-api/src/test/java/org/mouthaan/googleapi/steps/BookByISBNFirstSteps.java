@@ -1,4 +1,4 @@
-package steps;
+package org.mouthaan.googleapi.steps;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -11,11 +11,11 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsInAnyOrder;
 
-public class GoogleBookFirstSearch {
+public class BookByISBNFirstSteps {
     private static final URI ENDPOINT_GET_BOOK_BY_ISBN = URI.create("https://www.googleapis.com/books/v1/volumes");
     private StepData stepData;
 
-    public GoogleBookFirstSearch(StepData stepData) {
+    public BookByISBNFirstSteps(StepData stepData) {
         this.stepData = stepData;
     }
 
@@ -40,4 +40,5 @@ public class GoogleBookFirstSearch {
             }
         });
     }
+
 }
