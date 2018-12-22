@@ -12,6 +12,7 @@
     <modules>
         <module>google-api</module>
         <module>jsonplaceholder-api</module>
+        <module>weather-service-api</module>
     </modules>
 
     <name>Cucumber RestAssured Examples</name>
