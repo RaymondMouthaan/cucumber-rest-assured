@@ -1,0 +1,107 @@
+### Get user with id 2
+
+GET https://reqres.in/api/users/2
+Accept: */*
+Cache-Control: no-cache
+
+### Get user with id 3
+
+GET https://reqres.in/api/users/3
+Accept: */*
+Cache-Control: no-cache
+
+### Get users per page
+
+GET https://reqres.in/api/users?page=1
+Accept: */*
+Cache-Control: no-cache
+
+### Get user not found
+
+GET https://reqres.in/api/users/23
+Accept: */*
+Cache-Control: no-cache
+
+### List<Resource>
+GET https://reqres.in/api/unknown
+Accept: */*
+Cache-Control: no-cache
+
+### Single <Resource>
+GET https://reqres.in/api/unknown/2
+Accept: */*
+Cache-Control: no-cache
+
+### Single <Resource> not found
+GET https://reqres.in/api/unknown/23
+Accept: */*
+Cache-Control: no-cache
+
+### Create User
+POST https://reqres.in/api/users
+Content-Type: application/json
+
+{
+    "name": "morpheus",
+    "job": "leader"
+}
+
+### Update User
+PUT https://reqres.in/api/users/2
+Content-Type: application/json
+
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
+
+### Update User
+PATCH https://reqres.in/api/users/2
+Content-Type: application/json
+
+{
+  "name": "morpheus",
+  "job": "zion resident 2"
+}
+
+### Delete User
+DELETE https://reqres.in/api/users/2
+
+### Register Succesful
+POST https://reqres.in/api/register
+Content-Type: application/json
+
+{
+    "email": "sydney@fife",
+    "password": "pistol"
+}
+
+### Register unsuccesful
+POST https://reqres.in/api/register
+Content-Type: application/json
+
+{
+  "email": "sydney@fife"
+}
+
+### Login Succesful
+POST https://reqres.in/api/login
+Content-Type: application/json
+
+{
+  "email": "peter@klaven",
+  "password": "cityslicka"
+}
+
+### Login Unsuccesful
+POST https://reqres.in/api/login
+Content-Type: application/json
+
+{
+  "email": "peter@klaven"
+}
+
+### Delayed response
+GET https://reqres.in/api/users?delay=3
+
+
